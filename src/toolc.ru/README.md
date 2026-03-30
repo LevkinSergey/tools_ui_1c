@@ -104,7 +104,7 @@ pnpm deploy
 
 ## Вклад
 
-Внесите свой вклад в документацию проекта! См. [руководство для контрибьютеров](https://cpr1c.github.io/tools_ui_1c/docs/development/contributing).
+Внесите свой вклад в документацию проекта! См. [руководство для контрибьютеров](https://toolc.ru/docs/development/contributing).
 
 ## Лицензия
 

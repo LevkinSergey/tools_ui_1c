@@ -10,7 +10,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Установите правильный URL вашего сайта
-  url: "https://cpr1c.github.io",
+  url: "https://toolc.ru",
   baseUrl: "/",
   baseUrlIssueBanner: true,
 
@@ -175,12 +175,12 @@ const config: Config = {
       // Open Graph: изображение
       {
         property: "og:image",
-        content: "/tools_ui_1c/img/og-image.svg",
+        content: "/img/og-image.svg",
       },
       // Open Graph: URL
       {
         property: "og:url",
-        content: "https://cpr1c.github.io/tools_ui_1c/",
+        content: "https://toolc.ru/",
       },
       // Open Graph: сайт
       {

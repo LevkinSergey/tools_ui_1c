@@ -11,7 +11,7 @@ Disallow: /*.json$
 
 # Sitemap — карта сайта для поисковых систем
 # Обновляется автоматически при каждой сборке
-Sitemap: https://cpr1c.github.io/tools_ui_1c/sitemap.xml
+Sitemap: https://toolc.ru/sitemap.xml
 
 # Время ожидания между запросами (рекомендация)
 Crawl-delay: 1
