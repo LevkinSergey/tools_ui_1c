@@ -3,3 +3,18 @@ docs/_site
 docs/.jekyll-cache
 docs/coverage
 build/
+
+# Node.js (src/tools.ru)
+src/tools.ru/node_modules/
+src/tools.ru/dist/
+src/tools.ru/build/
+src/tools.ru/.env
+src/tools.ru/.env.local
+src/tools.ru/npm-debug.log*
+src/tools.ru/yarn-debug.log*
+src/tools.ru/yarn-error.log*
+src/tools.ru/coverage/
+src/tools.ru/.next/
+src/tools.ru/.nuxt/
+src/tools.ru/.cache/
+src/tools.ru/tsconfig.tsbuildinfo

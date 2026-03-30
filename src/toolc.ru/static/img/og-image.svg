@@ -1,0 +1,40 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон градиент -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Фоновый прямоугольник -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Декоративные элементы -->
+  <circle cx="100" cy="100" r="50" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1100" cy="530" r="80" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="900" cy="150" r="40" fill="rgba(255,255,255,0.08)"/>
+  
+  <!-- Основной текст -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Универсальные
+  </text>
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    инструменты 1С
+  </text>
+  
+  <!-- Подзаголовок -->
+  <text x="600" y="440" font-family="Arial, sans-serif" font-size="36" fill="#ffffff" text-anchor="middle" opacity="0.9">
+    30+ инструментов для разработчика 1С:Предприятие
+  </text>
+  
+  <!-- Иконки инструментов -->
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" opacity="0.8">
+    🔧 Консоль запросов  •  📊 Редактор СКД  •  💻 Консоль кода
+  </text>
+  
+  <!-- URL сайта -->
+  <text x="600" y="590" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" opacity="0.7">
+    cpr1c.github.io/tools_ui_1c
+  </text>
+</svg>
