@@ -56,7 +56,7 @@ jobs:
       #   run: opm install cli fs logos tempfiles v8runner v8find 1commands
 
       - name: Конвертация исходников
-        run: build.bat xml
+        run: ./build.bat xml
 
       - name: Публикация исходников в формате конфигуратора
         uses: actions/upload-artifact@v4
