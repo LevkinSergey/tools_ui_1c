@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - "develop"
+      - "ci-on-windows"
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}-${{ github.event.repository }}-export
   cancel-in-progress: true
