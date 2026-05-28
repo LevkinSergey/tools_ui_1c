@@ -26,7 +26,7 @@ jobs:
       JAVA_TOOL_OPTIONS: "-Dfile.encoding=UTF8"
     defaults:
       run:
-        shell: bash
+        shell: cmd
     steps:
       - name: Извлечение исходников ветки ${{ github.ref_name }}
         if: github.event_name == 'push'
@@ -57,7 +57,7 @@ jobs:
       #   run: opm install cli fs logos tempfiles v8runner v8find 1commands
 
       - name: Конвертация исходников
-        run: ./build.sh xml
+        run: ./build.bat xml
       
       - name: Публикация исходников в формате конфигуратора
         uses: actions/upload-artifact@v4
