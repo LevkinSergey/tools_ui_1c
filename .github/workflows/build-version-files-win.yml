@@ -69,7 +69,7 @@ jobs:
 
   build-github:
     name: Сборка файлов инструментов cfe/cf
-    runs-on: ubuntu-22.04
+    runs-on: windows-2025
     needs: export-xml
     env:
       TOOLS_UI_1C_BUILDER_PLATFORM_PATH: "C:\\Program Files\\1cv8\\8.3.17.2760\\bin\\"
