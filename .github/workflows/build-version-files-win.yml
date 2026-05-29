@@ -26,7 +26,7 @@ jobs:
       JAVA_TOOL_OPTIONS: "-Dfile.encoding=UTF8"
     defaults:
       run:
-        shell: cmd
+        shell: bash
     steps:
       - name: Извлечение исходников ветки ${{ github.ref_name }}
         if: github.event_name == 'push'
