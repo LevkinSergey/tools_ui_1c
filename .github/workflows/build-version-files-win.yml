@@ -75,7 +75,7 @@ jobs:
       TOOLS_UI_1C_BUILDER_PLATFORM_PATH: "C:\\Program Files\\1cv8\\8.3.17.2760\\bin\\"
     defaults:
       run:
-        shell: bash
+        shell: cmd
     steps:
       - name: Извлечение исходников ветки ${{ github.ref_name }}
         if: github.event_name == 'push'
@@ -98,17 +98,20 @@ jobs:
           ONEC_PASSWORD: ${{ secrets.ONEC_PASSWORD }}
         timeout-minutes: 10
 
+      - name: Установка кодировки вывода
+        run: chcp 65001
+
       - name: Setup Onescript Action
         uses: otymko/setup-onescript@v1.4
         with:
           version: 1.9.2
 
       - name: Сборка расширений
-        run: oscript src/builder/build.os cfe
+        run: oscript -encoding=utf-8 src/builder/build.os cfe
         timeout-minutes: 30
 
       - name: Сборка конфигураций
-        run: .\build.bat cf
+        run: oscript -encoding=utf-8 src/builder/build.os cf
         timeout-minutes: 30
       - name: Публикация файлов
         uses: softprops/action-gh-release@v2
