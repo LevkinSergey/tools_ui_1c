@@ -27,7 +27,7 @@ jobs:
 
     defaults:
       run:
-        shell: cmd
+        shell: powershell
     steps:
       - name: Извлечение исходников ветки ${{ github.ref_name }}
         if: github.event_name == 'push'
