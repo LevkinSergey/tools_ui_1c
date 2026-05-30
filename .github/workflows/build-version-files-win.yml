@@ -75,7 +75,7 @@ jobs:
       TOOLS_UI_1C_BUILDER_PLATFORM_PATH: "C:\\Program Files\\1cv8\\8.3.17.2760\\bin\\"
     defaults:
       run:
-        shell: bash
+        shell: powershell
     steps:
       - name: Извлечение исходников ветки ${{ github.ref_name }}
         if: github.event_name == 'push'
@@ -104,11 +104,11 @@ jobs:
           version: 1.9.2
 
       - name: Сборка расширений
-        run: oscript -encoding=utf-8 ./src/builder/build.os cfe
+        run: .\build.bat cfe
         timeout-minutes: 30
 
       - name: Сборка конфигураций
-        run: oscript -encoding=utf-8 ./src/builder/build.os cf
+        run: .\build.bat cf
         timeout-minutes: 30
       - name: Публикация файлов
         uses: softprops/action-gh-release@v2
@@ -161,7 +161,7 @@ jobs:
           version: 1.9.2
 
       - name: Сборка портативной
-        run: oscript -encoding=utf-8 src/builder/build.os epf
+        run: .\build.bat epf
         timeout-minutes: 30
 
       - name: Публикация файлов
