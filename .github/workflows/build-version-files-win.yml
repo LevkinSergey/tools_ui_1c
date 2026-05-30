@@ -128,7 +128,7 @@ jobs:
 
   build-portable:
     name: Сборка файлов портативной поставки
-    runs-on: windows-2025
+    runs-on: windows-2022
     needs: export-xml
     env:
       TOOLS_UI_1C_BUILDER_PLATFORM_PATH: "C:\\Program Files\\1cv8\\8.3.27.2170\\bin\\"
