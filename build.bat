@@ -1,2 +1,2 @@
-@oscript.exe .\src\builder\build.os %*
+@oscript.exe -encoding=utf-8 .\src\builder\build.os %*
 @exit /b %ERRORLEVEL%
