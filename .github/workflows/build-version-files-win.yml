@@ -104,7 +104,7 @@ jobs:
           version: 1.9.2
 
       - name: Сборка расширений
-        run: .\build.bat cfe
+        run: oscript src/builder/build.os cfe
         timeout-minutes: 30
 
       - name: Сборка конфигураций
@@ -161,7 +161,7 @@ jobs:
           version: 1.9.2
 
       - name: Сборка портативной
-        run: .\build.bat epf
+        run: oscript -encoding=utf-8 src/builder/build.os epf
         timeout-minutes: 30
 
       - name: Публикация файлов
