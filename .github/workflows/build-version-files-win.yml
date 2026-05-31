@@ -17,6 +17,14 @@ on:
         description: 'Пароль пользователя портала 1С для скачивания дистрибутивов'
         required: true  
 jobs:
+  test-win:
+    name: test win
+    runs-on: windows-2025
+    steps:
+      - name: echo
+        run: "chcp 1251
+          |echo тест
+          |"
   export-xml:
     name: Экспорт исходников в формате конфигуратора
     runs-on: ubuntu-24.04
