@@ -25,7 +25,7 @@ jobs:
         shell: cmd
     steps:
       - name: echo
-        run: "chcp 1251
+        run: "chcp 65001
           |echo тест
           |"
   export-xml:
